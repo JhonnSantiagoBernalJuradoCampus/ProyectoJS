@@ -6,6 +6,9 @@ let json = await res.json();
 
 let plantilla = ""
 let menores = ""
+let team = ""
+let team2 = ""
+let team3 = ""
 json.forEach((val,id) => {
     console.log(val);
     val.edad = parseInt(val.edad)
@@ -13,6 +16,16 @@ json.forEach((val,id) => {
         menores += `<tr class="p-1">
         <td>${val.nombre}</td>
         <td>${val.edad}</td>
+        </tr>`
+    }
+    if (val.id_team == 1){
+        team+= `<tr class="p-1">${val.nombre}
+        </tr>`
+    }else if(val.id_team == 2){
+        team2 += `<tr class="p-1">${val.nombre}
+        </tr>`
+    } else {
+        team3 += `<tr class="p-1">${val.nombre}
         </tr>`
     }
     plantilla+= `
@@ -32,6 +45,9 @@ json.forEach((val,id) => {
     
 });
 document.querySelector(".tablebody").insertAdjacentHTML("afterbegin",plantilla);
+document.querySelector(".sputnik").insertAdjacentHTML("afterbegin", team);
+document.querySelector(".artemis").insertAdjacentHTML("afterbegin", team2);
+document.querySelector(".apolo").insertAdjacentHTML("afterbegin", team3);
 document.querySelector(".tablebody2").insertAdjacentHTML("afterbegin", menores)
 document.querySelectorAll(".delete").forEach((val,id)=>{
     val.addEventListener("click", (e)=>{
