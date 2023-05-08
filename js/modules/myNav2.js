@@ -36,7 +36,7 @@ export default{
                 </ul>
             </div>`
         })
-        document.querySelector("body").insertAdjacentHTML("afterbegin", `<nav class="navbar navbar-expand-lg w-100">
+        document.querySelector("body").insertAdjacentHTML("afterbegin", `<nav class="navbar navbar-expand-lg w-100 position-fixed top-0">
         <div class="container-fluid">
             <a class="navbar-brand text-light me-5 pe-5" href="#">${this.title}</a>
             <button class="navbar-toggler bg-light w-100" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

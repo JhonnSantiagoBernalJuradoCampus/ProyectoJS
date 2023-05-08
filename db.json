@@ -83,6 +83,18 @@
       "fecha_ingreso_programa": "1111-11-11",
       "id_team": "1",
       "id": 7
+    },
+    {
+      "nombre": "Daniel",
+      "edad": "10",
+      "telefono": "19029328394",
+      "email": "sapsapsap@gmail.com",
+      "direccion": "cr3 #10- 12",
+      "fecha_nacimiento": "2001-12-23",
+      "numero_documento": "102390213",
+      "fecha_ingreso_programa": "2000-01-02",
+      "id_team": "3",
+      "id": 8
     }
   ],
   "team": [
