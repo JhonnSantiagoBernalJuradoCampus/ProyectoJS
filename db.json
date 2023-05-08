@@ -71,6 +71,18 @@
       "fecha_ingreso_programa": "1111-11-11",
       "id_team": "2",
       "id": 6
+    },
+    {
+      "nombre": "xd",
+      "edad": "18",
+      "telefono": "3123860656",
+      "email": "ganar.oscaryangela@gmail.com",
+      "direccion": "Cra 6 #13-18",
+      "fecha_nacimiento": "1111-11-11",
+      "numero_documento": "121",
+      "fecha_ingreso_programa": "1111-11-11",
+      "id_team": "1",
+      "id": 7
     }
   ],
   "team": [

@@ -30,14 +30,7 @@ export default class myForm extends HTMLElement {
             ws.terminate();
         })
     }
-    async getData() {
-        let url = "http://localhost:4000/reclutas"
-        let data = Promise.resolve(fetch(url, {
-            method: "GET",
-            headers: {"Content-Type": "application/json"}
-        }))
-        console.log(data);
-    }
+    
     constructor(){
         super();
         this.attachShadow({mode: "open"});
