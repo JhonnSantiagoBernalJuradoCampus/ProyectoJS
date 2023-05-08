@@ -16,12 +16,27 @@ export default class myForm extends HTMLElement {
         e.preventDefault();
         let ws = new Worker("js/ws/wsPost.js", {type: "module"})
         let data = Object.fromEntries(new FormData(e.target));
+        /* let ws2 = new Worker("js/ws/wsPostTeam.js", {type: "module"})
         console.log(data);
+        ws2.postMessage(data)                                                                                                                                                                   
+        ws2.addEventListener("message", (e)=>{
+            console.log(e.data)
+            ws.terminate();
+        }) */
         ws.postMessage(data)
+        
         ws.addEventListener("message", (e)=>{
             console.log(e.data)
             ws.terminate();
         })
+    }
+    async getData() {
+        let url = "http://localhost:4000/reclutas"
+        let data = Promise.resolve(fetch(url, {
+            method: "GET",
+            headers: {"Content-Type": "application/json"}
+        }))
+        console.log(data);
     }
     constructor(){
         super();

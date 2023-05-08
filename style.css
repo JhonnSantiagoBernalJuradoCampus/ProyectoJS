@@ -8,3 +8,10 @@ body{
     background-attachment: fixed;
     background-size: cover; 
 }
+nav{
+    background-image: url(assets/galaxia.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    opacity: 0.9;
+}
