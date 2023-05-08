@@ -1,0 +1,65 @@
+{
+    "reclutas": [
+        {
+            "nombre": "Jhon Santiago Bernal Jurado",
+            "edad": 18,
+            "telefono": "3123860656",
+            "email": "jbernalsantiago11@gmail.com",
+            "direccion": "Cra 6 #13-18",
+            "fecha_nacimiento": "11-09-2004",
+            "numero_documento": "1098621901",
+            "fecha_ingreso_programa": "23-01-2023",
+            "id_team": "1",
+            "id": 1
+        },
+        {
+            "nombre": "Santiago Bernal ",
+            "edad": "18",
+            "telefono": "3123860656",
+            "email": "jbernalsantiago11@gmail.com",
+            "direccion": "Cra 6 #13-18",
+            "fecha_nacimiento": "1111-11-11",
+            "numero_documento": "11",
+            "fecha_ingreso_programa": "1111-11-11",
+            "id_team": "1",
+            "id": 2
+        }
+    ],
+    "team": [
+        {
+            "id": 1,
+            "nombre": "SPUTNIK",
+            "trainer_asociado": "Miguel"
+        },
+        {
+            "id": 2,
+            "nombre": "ARTEMIS",
+            "trainer_asociado": "Vermen"
+        },
+        {
+            "id": 3,
+            "nombre": "Apolo",
+            "trainer_asociado": "Jolver"
+        }
+    ],
+    "skill": [
+        {
+            "id": 1,
+            "nombre": "HTML,CSS,JS"
+        }
+    ],
+    "modulo_skill": [
+        {
+            "id": 1,
+            "nombre": "Web",
+            "id_skill": 1
+        }
+    ],
+    "evaluacion": [
+        {
+            "id_recluta": 1,
+            "id_modulo": 1,
+            "nota": 4
+        }
+    ]
+}
